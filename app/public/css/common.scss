@@ -1,0 +1,95 @@
+$body-bg-color: rgb(245,248,250);
+$block-line-color: #e6ecf0;
+$nav-active-color: #0084B4;
+
+// 公共
+ul.list-no-style {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+
+  li {
+    list-style: none;
+    float: left;
+    margin: 5px 15px 5px 0;
+
+    a {
+      display: block;
+    }
+  }
+}
+
+// 导航条的默认高度
+$nav-bar-height: 50px;
+
+body {
+  padding-top: $nav-bar-height + 5px;
+  background-color: $body-bg-color;
+}
+
+.topbar {
+  border-bottom: 1px solid $block-line-color;
+  font-size: 18px;
+  background-color: #fff;
+
+  .nav-logo {
+    display: block;
+    margin-top: -8px;
+  }
+
+  .nav-active {
+    border-bottom: 3px solid $nav-active-color;
+  }
+}
+
+// 标签导航云
+.label-nav, .label-nav li {
+  list-style: none;
+}
+.label-nav a {
+  
+  display: block;
+  float: left;
+  margin: 5px 10px 5px 0px;
+  color: #e6ecf0;
+  border-radius: 5%;
+  background-color: lighten($nav-active-color,5%);
+
+  &:hover {
+    color: #fff;
+    background-color: lighten($nav-active-color,10%);
+  }
+}
+
+.site-slogan {
+  margin-top: 10px;
+}
+
+// 中间列表
+.note-list {
+  margin: 15px 0;
+}
+
+// 侧边栏
+.side-bar-label {
+  a {
+    background-color: $nav-active-color;
+    color: #e6ecf0;
+    padding: 4px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      background-color: lighten($nav-active-color, 5%);
+    }
+  }
+}
+
+// 网站底部
+.footer {
+  text-align: center;
+  border-top: 1px solid $block-line-color;
+}
+
+

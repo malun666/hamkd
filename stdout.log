@@ -1,0 +1,141 @@
+2017-06-12 09:22:15,958 INFO 3728 [master] =================== egg start =====================
+2017-06-12 09:22:15,959 INFO 3728 [master] egg version 1.4.0
+2017-06-12 09:22:15,959 INFO 3728 [master] start with options:
+{
+  "framework": "/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg",
+  "baseDir": "/Users/flydragon/Desktop/work/hamkd/code/hamkd",
+  "port": 7001,
+  "workers": 8,
+  "plugins": null,
+  "https": false,
+  "key": "",
+  "cert": ""
+}
+2017-06-12 09:22:15,959 INFO 3728 [master] start with env: isProduction: true, isDebug: false, EGG_SERVER_ENV: prod, NODE_ENV: undefined
+2017-06-12 09:22:15,966 INFO 3728 [master] agent_worker#1:3739 start with clusterPort:55606
+2017-06-12 09:22:16,186 INFO 3739 [egg:logger] init all loggers with options: {"dir":"/Users/flydragon/logs/hamkd","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"hamkd-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"type":"agent"}
+agent.config.env = prod
+2017-06-12 09:22:16,229 INFO 3739 [egg-watcher:agent] watcher start success
+2017-06-12 09:22:16,231 WARN 3739 [egg-watcher] defaultEventSource watcher will NOT take effect
+2017-06-12 09:22:16,235 INFO 3728 [master] agent_worker#1:3739 started (273ms)
+2017-06-12 09:22:16,251 INFO 3728 [master] app_worker#1:3740 start, state: none, current workers: ["1","2","3","4","5","6","7","8"]
+2017-06-12 09:22:16,251 INFO 3728 [master] app_worker#2:3741 start, state: none, current workers: ["1","2","3","4","5","6","7","8"]
+2017-06-12 09:22:16,251 INFO 3728 [master] app_worker#3:3742 start, state: none, current workers: ["1","2","3","4","5","6","7","8"]
+2017-06-12 09:22:16,251 INFO 3728 [master] app_worker#4:3743 start, state: none, current workers: ["1","2","3","4","5","6","7","8"]
+2017-06-12 09:22:16,252 INFO 3728 [master] app_worker#5:3744 start, state: none, current workers: ["1","2","3","4","5","6","7","8"]
+2017-06-12 09:22:16,252 INFO 3728 [master] app_worker#6:3745 start, state: none, current workers: ["1","2","3","4","5","6","7","8"]
+2017-06-12 09:22:16,252 INFO 3728 [master] app_worker#7:3746 start, state: none, current workers: ["1","2","3","4","5","6","7","8"]
+2017-06-12 09:22:16,252 INFO 3728 [master] app_worker#8:3747 start, state: none, current workers: ["1","2","3","4","5","6","7","8"]
+2017-06-12 09:22:16,786 INFO 3747 [egg:logger] init all loggers with options: {"dir":"/Users/flydragon/logs/hamkd","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"hamkd-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"type":"application"}
+2017-06-12 09:22:16,789 INFO 3742 [egg:logger] init all loggers with options: {"dir":"/Users/flydragon/logs/hamkd","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"hamkd-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"type":"application"}
+2017-06-12 09:22:16,791 INFO 3740 [egg:logger] init all loggers with options: {"dir":"/Users/flydragon/logs/hamkd","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"hamkd-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"type":"application"}
+2017-06-12 09:22:16,805 INFO 3741 [egg:logger] init all loggers with options: {"dir":"/Users/flydragon/logs/hamkd","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"hamkd-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"type":"application"}
+2017-06-12 09:22:16,805 INFO 3746 [egg:logger] init all loggers with options: {"dir":"/Users/flydragon/logs/hamkd","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"hamkd-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"type":"application"}
+2017-06-12 09:22:16,807 INFO 3743 [egg:logger] init all loggers with options: {"dir":"/Users/flydragon/logs/hamkd","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"hamkd-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"type":"application"}
+2017-06-12 09:22:16,808 INFO 3745 [egg:logger] init all loggers with options: {"dir":"/Users/flydragon/logs/hamkd","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"hamkd-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"type":"application"}
+2017-06-12 09:22:16,828 INFO 3744 [egg:logger] init all loggers with options: {"dir":"/Users/flydragon/logs/hamkd","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"hamkd-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"type":"application"}
+2017-06-12 09:22:16,842 INFO 3742 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-06-12 09:22:16,842 INFO 3742 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+app.config.env = prod
+2017-06-12 09:22:16,846 INFO 3747 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-06-12 09:22:16,846 INFO 3747 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+app.config.env = prod
+2017-06-12 09:22:16,852 INFO 3740 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-06-12 09:22:16,852 INFO 3740 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+app.config.env = prod
+2017-06-12 09:22:16,857 INFO 3746 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-06-12 09:22:16,857 INFO 3746 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+app.config.env = prod
+2017-06-12 09:22:16,862 INFO 3745 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-06-12 09:22:16,863 INFO 3745 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-06-12 09:22:16,863 INFO 3741 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-06-12 09:22:16,863 INFO 3743 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-06-12 09:22:16,863 INFO 3741 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-06-12 09:22:16,863 INFO 3743 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+app.config.env = prod
+app.config.env = prod
+app.config.env = prod
+2017-06-12 09:22:16,885 INFO 3744 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-06-12 09:22:16,886 INFO 3744 [egg-schedule]: register schedule egg-schedule:/Users/flydragon/Desktop/work/hamkd/code/hamkd/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+app.config.env = prod
+2017-06-12 09:22:16,893 INFO 3742 [egg-static] starting static serve /public/ -> /Users/flydragon/Desktop/work/hamkd/code/hamkd/app/public
+2017-06-12 09:22:16,896 INFO 3742 [egg-security] use csrf middleware
+2017-06-12 09:22:16,897 INFO 3742 [egg-security] use methodnoallow middleware
+2017-06-12 09:22:16,898 INFO 3742 [egg-security] use noopen middleware
+2017-06-12 09:22:16,898 INFO 3742 [egg-security] use nosniff middleware
+2017-06-12 09:22:16,899 INFO 3742 [egg-security] use xssProtection middleware
+2017-06-12 09:22:16,899 INFO 3747 [egg-static] starting static serve /public/ -> /Users/flydragon/Desktop/work/hamkd/code/hamkd/app/public
+2017-06-12 09:22:16,899 INFO 3742 [egg-security] use xframe middleware
+2017-06-12 09:22:16,899 INFO 3742 [egg-security] compose 6 middlewares into one security middleware
+2017-06-12 09:22:16,902 INFO 3747 [egg-security] use csrf middleware
+2017-06-12 09:22:16,903 INFO 3747 [egg-security] use methodnoallow middleware
+2017-06-12 09:22:16,903 INFO 3747 [egg-security] use noopen middleware
+2017-06-12 09:22:16,904 INFO 3747 [egg-security] use nosniff middleware
+2017-06-12 09:22:16,904 INFO 3740 [egg-static] starting static serve /public/ -> /Users/flydragon/Desktop/work/hamkd/code/hamkd/app/public
+2017-06-12 09:22:16,904 INFO 3747 [egg-security] use xssProtection middleware
+2017-06-12 09:22:16,905 INFO 3747 [egg-security] use xframe middleware
+2017-06-12 09:22:16,905 INFO 3747 [egg-security] compose 6 middlewares into one security middleware
+2017-06-12 09:22:16,907 INFO 3746 [egg-static] starting static serve /public/ -> /Users/flydragon/Desktop/work/hamkd/code/hamkd/app/public
+2017-06-12 09:22:16,907 INFO 3740 [egg-security] use csrf middleware
+2017-06-12 09:22:16,909 INFO 3740 [egg-security] use methodnoallow middleware
+2017-06-12 09:22:16,909 INFO 3740 [egg-security] use noopen middleware
+2017-06-12 09:22:16,910 INFO 3740 [egg-security] use nosniff middleware
+2017-06-12 09:22:16,910 INFO 3746 [egg-security] use csrf middleware
+2017-06-12 09:22:16,910 INFO 3740 [egg-security] use xssProtection middleware
+2017-06-12 09:22:16,911 INFO 3746 [egg-security] use methodnoallow middleware
+2017-06-12 09:22:16,911 INFO 3740 [egg-security] use xframe middleware
+2017-06-12 09:22:16,911 INFO 3740 [egg-security] compose 6 middlewares into one security middleware
+2017-06-12 09:22:16,911 INFO 3746 [egg-security] use noopen middleware
+2017-06-12 09:22:16,912 INFO 3746 [egg-security] use nosniff middleware
+2017-06-12 09:22:16,912 INFO 3743 [egg-static] starting static serve /public/ -> /Users/flydragon/Desktop/work/hamkd/code/hamkd/app/public
+2017-06-12 09:22:16,912 INFO 3746 [egg-security] use xssProtection middleware
+2017-06-12 09:22:16,913 INFO 3746 [egg-security] use xframe middleware
+2017-06-12 09:22:16,913 INFO 3746 [egg-security] compose 6 middlewares into one security middleware
+2017-06-12 09:22:16,915 INFO 3743 [egg-security] use csrf middleware
+2017-06-12 09:22:16,915 INFO 3745 [egg-static] starting static serve /public/ -> /Users/flydragon/Desktop/work/hamkd/code/hamkd/app/public
+2017-06-12 09:22:16,915 INFO 3741 [egg-static] starting static serve /public/ -> /Users/flydragon/Desktop/work/hamkd/code/hamkd/app/public
+2017-06-12 09:22:16,916 INFO 3743 [egg-security] use methodnoallow middleware
+2017-06-12 09:22:16,916 INFO 3743 [egg-security] use noopen middleware
+2017-06-12 09:22:16,917 INFO 3743 [egg-security] use nosniff middleware
+2017-06-12 09:22:16,917 INFO 3743 [egg-security] use xssProtection middleware
+2017-06-12 09:22:16,918 INFO 3743 [egg-security] use xframe middleware
+2017-06-12 09:22:16,918 INFO 3743 [egg-security] compose 6 middlewares into one security middleware
+2017-06-12 09:22:16,918 INFO 3745 [egg-security] use csrf middleware
+2017-06-12 09:22:16,918 INFO 3741 [egg-security] use csrf middleware
+2017-06-12 09:22:16,919 INFO 3745 [egg-security] use methodnoallow middleware
+2017-06-12 09:22:16,919 INFO 3741 [egg-security] use methodnoallow middleware
+2017-06-12 09:22:16,920 INFO 3745 [egg-security] use noopen middleware
+2017-06-12 09:22:16,920 INFO 3741 [egg-security] use noopen middleware
+2017-06-12 09:22:16,920 INFO 3745 [egg-security] use nosniff middleware
+2017-06-12 09:22:16,920 INFO 3741 [egg-security] use nosniff middleware
+2017-06-12 09:22:16,921 INFO 3741 [egg-security] use xssProtection middleware
+2017-06-12 09:22:16,921 INFO 3745 [egg-security] use xssProtection middleware
+2017-06-12 09:22:16,921 INFO 3741 [egg-security] use xframe middleware
+2017-06-12 09:22:16,921 INFO 3745 [egg-security] use xframe middleware
+2017-06-12 09:22:16,921 INFO 3741 [egg-security] compose 6 middlewares into one security middleware
+2017-06-12 09:22:16,921 INFO 3745 [egg-security] compose 6 middlewares into one security middleware
+2017-06-12 09:22:16,926 INFO 3742 [egg-watcher:app] watcher start success
+2017-06-12 09:22:16,930 INFO 3747 [egg-watcher:app] watcher start success
+2017-06-12 09:22:16,937 INFO 3740 [egg-watcher:app] watcher start success
+2017-06-12 09:22:16,939 INFO 3746 [egg-watcher:app] watcher start success
+2017-06-12 09:22:16,940 INFO 3728 [master] app_worker#3:3742 started at 7001, remain 7 (705ms)
+2017-06-12 09:22:16,942 INFO 3744 [egg-static] starting static serve /public/ -> /Users/flydragon/Desktop/work/hamkd/code/hamkd/app/public
+2017-06-12 09:22:16,943 INFO 3728 [master] app_worker#8:3747 started at 7001, remain 6 (708ms)
+2017-06-12 09:22:16,947 INFO 3744 [egg-security] use csrf middleware
+2017-06-12 09:22:16,947 INFO 3744 [egg-security] use methodnoallow middleware
+2017-06-12 09:22:16,948 INFO 3745 [egg-watcher:app] watcher start success
+2017-06-12 09:22:16,948 INFO 3744 [egg-security] use noopen middleware
+2017-06-12 09:22:16,948 INFO 3741 [egg-watcher:app] watcher start success
+2017-06-12 09:22:16,948 INFO 3744 [egg-security] use nosniff middleware
+2017-06-12 09:22:16,949 INFO 3744 [egg-security] use xssProtection middleware
+2017-06-12 09:22:16,949 INFO 3744 [egg-security] use xframe middleware
+2017-06-12 09:22:16,949 INFO 3744 [egg-security] compose 6 middlewares into one security middleware
+2017-06-12 09:22:16,949 INFO 3743 [egg-watcher:app] watcher start success
+2017-06-12 09:22:16,951 INFO 3728 [master] app_worker#1:3740 started at 7001, remain 5 (716ms)
+2017-06-12 09:22:16,952 INFO 3728 [master] app_worker#7:3746 started at 7001, remain 4 (717ms)
+2017-06-12 09:22:16,957 INFO 3728 [master] app_worker#2:3741 started at 7001, remain 3 (722ms)
+2017-06-12 09:22:16,957 INFO 3728 [master] app_worker#6:3745 started at 7001, remain 2 (722ms)
+2017-06-12 09:22:16,958 INFO 3728 [master] app_worker#4:3743 started at 7001, remain 1 (723ms)
+2017-06-12 09:22:16,967 INFO 3744 [egg-watcher:app] watcher start success
+2017-06-12 09:22:16,974 INFO 3728 [master] app_worker#5:3744 started at 7001, remain 0 (739ms)
+2017-06-12 09:22:16,974 INFO 3728 [master] egg started on http://127.0.0.1:7001 (1015ms)
