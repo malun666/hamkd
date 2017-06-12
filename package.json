@@ -6,7 +6,8 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "egg": "^1.4.0",
-    "egg-view-nunjucks": "^2.1.2"
+    "egg-view-nunjucks": "^2.1.2",
+    "mocha": "^3.4.2"
   },
   "devDependencies": {
     "autod": "^2.8.0",
