@@ -2,13 +2,16 @@
 
 module.exports = app => {
   class HomeController extends app.Controller {
-    * index() {
-      const data = {
+    * index(ctx) {
+      var isLogin = ctx.session.userId? true : false;
+
+      var data = {
         name: 'hamkd',
-        __pageUrl__: 'home/index.tpl'
+        isLogin : isLogin,
       };
-      // this.ctx.body = 'hi, hamkd';
-      yield this.ctx.render('_layout.tpl', data);
+
+      yield this.ctx.render('home/index.tpl', data);
+
     }
   }
   return HomeController;

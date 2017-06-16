@@ -40,6 +40,16 @@ body {
   .nav-active {
     border-bottom: 3px solid $nav-active-color;
   }
+
+  .user-bar .user-bar-nav{
+    display: none;
+    width: 130px;
+  }
+  .user-bar:hover .user-bar-nav {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+  }
 }
 
 // 标签导航云
@@ -68,6 +78,10 @@ body {
 // 中间列表
 .note-list {
   margin: 15px 0;
+}
+
+.main-body {
+  min-height: 500px;
 }
 
 // 侧边栏

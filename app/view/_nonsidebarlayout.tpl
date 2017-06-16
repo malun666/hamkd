@@ -119,13 +119,13 @@
       </ul>
     </div>
   {% endblock%}
-    <div class="container main-body">
-      <div class="row">
-      {% block body %} 
-      {% endblock%}
-      </div>
+  <div class="container main-body">
+    <div class="row">
+    {% block body %} 
+    {% endblock%}
     </div>
-
+  </div>
+    
   <div class="container">
      <div class="footer">
       
@@ -135,5 +135,3 @@
     </div>
 </body>
 </html>
-
-
