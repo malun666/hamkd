@@ -10,5 +10,9 @@ module.exports = app => {
   app.post('/user/reg', 'user.postreg');
   app.get('/user/getCodeImage/:date', 'user.getCodeImage');
   
-  app.get('/user/login/url','user.login')
+  app.get('/user/login','user.login')
+  app.post('/user/login','user.postLogin')
+
+  // 用户模块
+  app.get('/userinfo/:id', 'userinfo.index')
 };

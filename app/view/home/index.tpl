@@ -91,5 +91,7 @@
   </div>{# column #}
   {% include 'component/sidebar.tpl'%}
 
+<div>
+</div>
   {% endblock %}
 

@@ -17,9 +17,9 @@ module.exports = app => {
 
       if(!body.vcode || body.vcode !== ctx.session.vcode) {
         // 生成新的session的vcode防止，session攻击
-        getSessionVCode(ctx);
+        this.getSessionVCode(ctx);
 
-        yield this.ctx.render('user/reg.tpl', {msg: "验证码错误！"});
+        yield this.ctx.render('user/reg.tpl',Object.assign(body, {msg: "验证码错误！"}));
         return;
       }
 
@@ -33,6 +33,32 @@ module.exports = app => {
     // 用户登录
     * login(ctx) {
       yield this.ctx.render('user/login.tpl');
+    }
+
+    * postLogin(ctx) {
+      var body = ctx.request.body;
+       if(!body.vcode || body.vcode !== ctx.session.vcode) {
+        // 生成新的session的vcode防止，session攻击
+        // this.getSessionVCode(ctx);
+        ctx.session.vcode = null;
+
+        yield this.ctx.render('user/login.tpl', Object.assign(body,{msg: "验证码错误！"}));
+        return;
+      }
+    
+      if( !!body.userName && !!body.password ) {
+        var user = yield ctx.service.user.checkUser(body);
+        console.log("user is: " + user)
+        if( user !==  null) {
+          ctx.session.vcode = null;
+          ctx.session.loginUser = user;
+          ctx.response.redirect('/');
+          return;
+        }
+      }
+
+      // 校验失败，返回用户名密码错误。
+      yield ctx.render('user/login.tpl',Object.assign(ctx.request.body, {msg: "用户名密码错误！"}) );
     }
 
     // post  /user/checkUserName    

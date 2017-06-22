@@ -17,7 +17,7 @@
   <div class="form-group  has-feedback" id="userNameGroup">
     <label for="userName" class="col-sm-2 control-label" required minlength="2" message="必填，而且不得少于2个字符">用户名</label>
     <div class="col-sm-4">
-      <input type="text" value="" class="form-control" name="userName" id="userName" placeholder="用户名">
+      <input type="text" value="{{userName}}" class="form-control" name="userName" id="userName" placeholder="用户名">
       <span id="statusUserName" class="glyphicon form-control-feedback" aria-hidden="true"></span>
     </div>
     <div class="col-sm-6">
@@ -56,7 +56,13 @@
   
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">注册</button>
+      <button type="submit" class="btn btn-info">注册</button>
+    </div>
+  </div>
+
+  <div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+      <a href="/user/login" class="">已经有账号，直接登录</a>
     </div>
   </div>
 </form>
@@ -64,5 +70,5 @@
 </div>
 <script src="/js-cookie/src/js.cookie.js"></script>
 <script src="/js/jquerysetup.js"></script>
-<script src="/js/userreg.js"></script>
+<script src="/js/user/userreg.js"></script>
 {% endblock %}

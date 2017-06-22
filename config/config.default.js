@@ -18,7 +18,7 @@ module.exports = appInfo => {
     }
   };
 
-  config.middleware = ['setpageurl'];
+  config.middleware = ['setpageurl','usercheck'];
 
   // 设置mongodb的连接字符串
   config.mongoose = {

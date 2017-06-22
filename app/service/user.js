@@ -17,6 +17,13 @@ module.exports = app => {
       });
     }
 
+    // 校验用户是否存在。
+    * checkUser(user) {
+      if( !!user.userName && !!user.password ) {
+        return yield this.ctx.model.User.findOne({"userName": user.userName, "password": user.password})
+      }
+      return null;
+    }
     * findByName(name) {
       if( !name ) {
         return null;

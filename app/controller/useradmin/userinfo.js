@@ -8,7 +8,7 @@ module.exports = app => {
         name: 'hamkd'
       };
 
-      yield this.ctx.render('home/index.tpl', data);
+      yield this.ctx.render('useradmin/userinfo/index.tpl', data);
 
     }
   }

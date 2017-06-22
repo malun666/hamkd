@@ -67,17 +67,20 @@
           </form>
 
           <li class="user-bar">
-              <a target="_blank" href="javascript:0"><i class="glyphicon glyphicon-user"></i></a>
-              <div class="user-bar-nav list-group small">
-                <a href="/user/reg" class="list-group-item">注册</a>
-                <a href="/user/login" class="list-group-item">登录</a>
-                <a href="/user/login" class="list-group-item">微博登录</a>
-                <a href="/user/login" class="list-group-item">github登录</a>
-                <a href="/user/login" class="list-group-item">twitter登录</a>
-              </div>
-            {#<div class="user-login">
-              <a href="/user/"><img src="/img/a.jpg" width="20" alt=""></a>
-            </div>#}
+              {% if userId %}
+                <div class="user-login">
+                  <a href="/user/{{userId}}"><img src="/img/a.jpg" width="25" alt=""></a>
+                </div>
+              {% else %}
+                <a target="_blank" href="/user/login"><i class="glyphicon glyphicon-user"></i></a>
+                <div class="user-bar-nav list-group small">
+                  <a href="/user/reg" class="list-group-item">注册</a>
+                  <a href="/user/login" class="list-group-item">登录</a>
+                  <a href="/user/login" class="list-group-item">微博登录</a>
+                  <a href="/user/login" class="list-group-item">github登录</a>
+                  <a href="/user/login" class="list-group-item">twitter登录</a>
+                </div>
+            {% endif %}
           </li>
           
         </ul>

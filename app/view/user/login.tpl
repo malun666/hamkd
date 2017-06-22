@@ -10,24 +10,21 @@
 {% block body %}
 <div class="panel panel-default reg-body">
 
-<form class="form-horizontal" method="post" action="/user/reg" id="frmReg">
+<form class="form-horizontal" method="post" action="/user/login" id="frmReg">
   <div class="col-sm-12 col-sm-offset-2">
     <span class="label label-danger">{{ msg }}</span>
   </div>
   <div class="form-group  has-feedback" id="userNameGroup">
-    <label for="userName" class="col-sm-2 control-label" required minlength="2" message="必填，而且不得少于2个字符">用户名</label>
+    <label for="userName" class="col-sm-2 control-label">用户名</label>
     <div class="col-sm-4">
-      <input type="text" value="" class="form-control" name="userName" id="userName" placeholder="用户名">
-      <span id="statusUserName" class="glyphicon form-control-feedback" aria-hidden="true"></span>
+      <input type="text" class="form-control"  required minlength="2" name="userName" id="userName" value="{{ userName }}" placeholder="用户名">
     </div>
-    <div class="col-sm-6">
-      <span id="userNameErrorMsg" class="help-block hidden" >用户名不可用</span>      
-    </div>
+    
   </div>
   <div class="form-group">
     <label for="inputPassword" class="col-sm-2 control-label">密码</label>
     <div class="col-sm-4">
-      <input required minlength="6" type="password" value="" name="password" data-msg="必填,而且密码不得少于6位" class="form-control" id="password" placeholder="#密码不得少于6位，不能有空格">
+      <input required minlength="6" type="password" value="{{ password }}" name="password" data-msg="必填,而且密码不得少于6位" class="form-control" id="password" placeholder="#密码不得少于6位，不能有空格">
     </div>
 
     <div class="col-sm-6">
@@ -46,8 +43,13 @@
   </div>
   
   <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">登录</button>
+    <div class="col-sm-offset-2 col-sm-4">
+      <button type="submit" class="btn btn-info">登录</button>
+    </div>
+  </div>
+   <div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+      <a href="/user/reg" class="">没有账号，需要注册</a>
     </div>
   </div>
 </form>
@@ -55,5 +57,5 @@
 </div>
 <script src="/js-cookie/src/js.cookie.js"></script>
 <script src="/js/jquerysetup.js"></script>
-<script src="/js/userreg.js"></script>
+<script src="/js/user/login.js"></script>
 {% endblock %}
