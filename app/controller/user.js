@@ -52,7 +52,10 @@ module.exports = app => {
         if( user !==  null) {
           ctx.session.vcode = null;
           ctx.session.loginUser = user;
-          ctx.response.redirect('/');
+          console.log(ctx.query.url)
+          var url = ctx.query.url || '/';
+          
+          ctx.response.redirect(url);
           return;
         }
       }

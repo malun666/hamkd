@@ -18,7 +18,7 @@ module.exports = appInfo => {
     }
   };
 
-  config.middleware = ['setpageurl','usercheck'];
+  config.middleware = ['setpageurl','usercheck','loginset'];
 
   // 设置mongodb的连接字符串
   config.mongoose = {
@@ -46,6 +46,14 @@ module.exports = appInfo => {
       headerName: 'x-csrf-token', // 通过 header 传递 CSRF token 的默认字段为 x-csrf-token
     }
   };
+
+  // 设置usercheck的过滤条件
+  config.usercheck = {
+    ignore(ctx) {
+      const reg = /(^\/(\?.*)?$)|(^\/user\/.*)/i;
+      return reg.test(ctx.request.url);
+    }
+  }
 
   return config;
 };

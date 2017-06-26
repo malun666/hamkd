@@ -68,7 +68,5 @@
 </form>
 
 </div>
-<script src="/js-cookie/src/js.cookie.js"></script>
-<script src="/js/jquerysetup.js"></script>
 <script src="/js/user/userreg.js"></script>
 {% endblock %}

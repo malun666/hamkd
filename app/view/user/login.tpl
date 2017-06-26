@@ -10,7 +10,7 @@
 {% block body %}
 <div class="panel panel-default reg-body">
 
-<form class="form-horizontal" method="post" action="/user/login" id="frmReg">
+<form class="form-horizontal" method="post" action="" id="frmReg">
   <div class="col-sm-12 col-sm-offset-2">
     <span class="label label-danger">{{ msg }}</span>
   </div>
@@ -55,7 +55,6 @@
 </form>
 
 </div>
-<script src="/js-cookie/src/js.cookie.js"></script>
-<script src="/js/jquerysetup.js"></script>
+
 <script src="/js/user/login.js"></script>
 {% endblock %}

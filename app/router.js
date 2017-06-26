@@ -14,5 +14,10 @@ module.exports = app => {
   app.post('/user/login','user.postLogin')
 
   // 用户模块
-  app.get('/userinfo/:id', 'userinfo.index')
+  app.get('/userinfo/:id', 'useradmin.userinfo.index')
+  app.get('/userinfo/logout', 'useradmin.userinfo.logout')
+  
+  app.get('/ask', 'useradmin.ask.index')
+  app.get('/ask/:id', 'useradmin.ask.detial')
+  app.post('/ask', 'useradmin.ask.postAsk')
 };

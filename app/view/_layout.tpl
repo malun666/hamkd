@@ -23,6 +23,9 @@
   <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   
+  <script src="/js-cookie/src/js.cookie.js"></script>
+  <script src="/js/jquerysetup.js"></script>
+
   <link rel="stylesheet" href="/css/common.css">
 
   {% block head %}
@@ -48,20 +51,28 @@
         <ul class="nav navbar-nav navbar-left">
           
           <li class="nav-active"><a href="/">首页</a></li>
-          <li><a href="/ask/list">问答</a></li>
+          <li><a href="/ask">问答</a></li>
           <li><a href="/reward/list">悬赏</a></li>
-          <li><a href="/topic/list">聊天室</a></li>
-          <li><a href="/group/list">圈圈</a></li>
+          <li><a href="/topic/list">聊天室</a></li> 
           <li><a href="/group/list">直播</a></li>
-          <li><a href="/group/list">讲堂</a></li>
-
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-
           <form class="navbar-form navbar-left">
+            <div class="btn-group">
+              <a  href="/ask" class="btn btn-success">提问</a>
+              <a  class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/ask">提问</a></li>
+                <li><a href="/article">写文章</a></li>
+                <li><a href="/microblog">写动态</a></li>
+              </ul>
+            </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="搜索">
+              <input type="text" class="form-control btn-small" placeholder="搜索">
             </div>
             <button type="button" onclick="alert('老马，骑行去了，给他发个微信回来')" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
           </form>
@@ -69,7 +80,7 @@
           <li class="user-bar">
               {% if userId %}
                 <div class="user-login">
-                  <a href="/user/{{userId}}"><img src="/img/a.jpg" width="25" alt=""></a>
+                  <a href="/userinfo/{{userId}}"><img src="/img/a.jpg" width="25" alt=""></a>
                 </div>
               {% else %}
                 <a target="_blank" href="/user/login"><i class="glyphicon glyphicon-user"></i></a>

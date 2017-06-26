@@ -1,0 +1,9 @@
+.ql-html:after {
+  content: "html";
+  font-size: 16px;
+  font-weight: bold; }
+
+#editor {
+  min-height: 350px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXNrLmNzcyIsInNvdXJjZXMiOlsiYXNrLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLnFsLWh0bWw6YWZ0ZXIge1xuICBjb250ZW50OiBcImh0bWxcIjtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cblxuI2VkaXRvciB7XG4gIG1pbi1oZWlnaHQ6IDM1MHB4O1xufVxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEFBQUEsUUFBUSxBQUFBLE1BQU0sQ0FBQztFQUNiLE9BQU8sRUFBRSxNQUFNO0VBQ2YsU0FBUyxFQUFFLElBQUk7RUFDZixXQUFXLEVBQUUsSUFBSSxHQUNsQjs7QUFFRCxBQUFBLE9BQU8sQ0FBQztFQUNOLFVBQVUsRUFBRSxLQUFLLEdBQ2xCIn0= */
