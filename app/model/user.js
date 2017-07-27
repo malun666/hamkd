@@ -9,6 +9,7 @@ module.exports = app => {
     phone: { type: String },
     birthDay: { type: Date, default: Date('1970-01-01') },
     blogUrl: { type: String },
+    isDel: { type: Boolean, default: false }
   });
 
   return mongoose.model('User', UserSchema);

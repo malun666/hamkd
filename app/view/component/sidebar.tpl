@@ -1,4 +1,4 @@
-<div class="col-md-4 hidden-xs hidden-sm ">
+<div class="col-md-3 hidden-xs hidden-sm ">
   <div class="row panel panel-default">
     <p class="panel-heading">相关标签</p>
     <div class="panel-body">

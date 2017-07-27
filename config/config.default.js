@@ -49,10 +49,11 @@ module.exports = appInfo => {
 
   // 设置usercheck的过滤条件
   config.usercheck = {
-    ignore(ctx) {
-      const reg = /(^\/(\?.*)?$)|(^\/user\/.*)/i;
-      return reg.test(ctx.request.url);
-    }
+    // ignore(ctx) {
+    //   const reg = /(^\/(\?.*)?$)|(^\/user\/.*)/i;
+    //   return reg.test(ctx.request.url);
+    // }
+    match: '/userp'
   }
 
   return config;

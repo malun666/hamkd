@@ -18,7 +18,7 @@ module.exports = app => {
       var ask = new ctx.model.Ask();
       ask.title = body.title;
       ask.askbody = body.askbody;
-      ask.userId = ctx.session.loginUser._id;
+      ask.user = ctx.session.loginUser._id;
       ask.labels = body.labels.split(',');
       ask.reward = body.reward;
       
@@ -33,7 +33,18 @@ module.exports = app => {
       if( ctx.params.id ) {
         ask = yield ctx.service.ask.find(ctx.params.id);
       }
-      yield this.ctx.render('useradmin/Ask/detial.tpl', ask);
+      yield this.ctx.render('useradmin/Ask/detial.tpl', {ask: ask});
+    }
+
+    * vote(ctx) {
+      var val = ctx.request.body.val;
+      var id = ctx.request.body.id;
+      if(val > 0 ) {
+        yield ctx.service.ask.voteAsk(1, id);
+      } else {
+        yield ctx.service.ask.voteAsk(-1, id);
+      }
+      ctx.response.body = { msg: "success"};
     }
   }
   return AskController;

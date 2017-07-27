@@ -17,7 +17,9 @@ module.exports = app => {
   app.get('/userinfo/:id', 'useradmin.userinfo.index')
   app.get('/userinfo/logout', 'useradmin.userinfo.logout')
   
-  app.get('/ask', 'useradmin.ask.index')
+  // 问题模块
+  app.get('/userp/ask', 'useradmin.ask.index')
   app.get('/ask/:id', 'useradmin.ask.detial')
-  app.post('/ask', 'useradmin.ask.postAsk')
+  app.post('/userp/ask', 'useradmin.ask.postAsk')
+  app.post('/ask/vote', 'useradmin.ask.vote')
 };

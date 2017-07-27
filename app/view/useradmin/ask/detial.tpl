@@ -9,8 +9,23 @@
 
 {% block body %}
 <div class="panel panel-default main-area">
-  title: {{ title }}<br >
+  <h2>问：{{ ask.title }}</h2>
+  
+  <hr>
 
-  body: {{ askbody }}
+  <div id="wmd-preview" class="wmd-panel wmd-preview">
+    {{ ask.askbody }}
+  </div>
+
 </div>
+<script src="/lib/pagedown/Markdown.Converter.js"></script>
+<script src="/lib/pagedown/Markdown.Sanitizer.js"></script>
+<script src="/lib/pagedown/Markdown.Editor.js"></script>
+<script type="text/javascript">
+  (function () {
+    var converter1 = Markdown.getSanitizingConverter();
+    $("#wmd-preview").html(converter1.makeHtml($("#wmd-preview").text()));
+  })();
+  $("#askFrm").validate();
+</script>
 {% endblock %}

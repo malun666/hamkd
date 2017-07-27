@@ -51,7 +51,7 @@
         <ul class="nav navbar-nav navbar-left">
           
           <li class="nav-active"><a href="/">首页</a></li>
-          <li><a href="/ask">问答</a></li>
+          <li><a href="/userp/ask">问答</a></li>
           <li><a href="/reward/list">悬赏</a></li>
           <li><a href="/topic/list">聊天室</a></li> 
           <li><a href="/group/list">直播</a></li>
@@ -60,21 +60,20 @@
         <ul class="nav navbar-nav navbar-right">
           <form class="navbar-form navbar-left">
             <div class="btn-group">
-              <a  href="/ask" class="btn btn-success">提问</a>
+              <a  href="/userp/ask" class="btn btn-success">提问</a>
               <a  class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="caret"></span>
                 <span class="sr-only">Toggle Dropdown</span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="/ask">提问</a></li>
+                <li><a href="/userp/ask">提问</a></li>
                 <li><a href="/article">写文章</a></li>
                 <li><a href="/microblog">写动态</a></li>
               </ul>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control btn-small" placeholder="搜索">
+              <input type="text" class="form-control btn-small" placeholder="搜索 回车直接搜索">
             </div>
-            <button type="button" onclick="alert('老马，骑行去了，给他发个微信回来')" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
           </form>
 
           <li class="user-bar">

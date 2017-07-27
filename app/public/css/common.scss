@@ -32,6 +32,8 @@ body {
   font-size: 18px;
   background-color: #fff;
 
+  // padding: 0 15px;
+
   .nav-logo {
     display: block;
     margin-top: -8px;
@@ -234,4 +236,9 @@ body {
 	font-family: trebuchet MS, helvetica, sans-serif;
 	font-size: 0.8em;
 	font-weight: bold;
+}
+
+.lb-link {
+  background-color: lighten(lightblue, 18%);
+  color: #999;
 }

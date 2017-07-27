@@ -11,7 +11,8 @@
     "egg-session": "^2.1.1",
     "egg-view-nunjucks": "^2.1.2",
     "js-cookie": "^2.1.4",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "autod": "^2.8.0",

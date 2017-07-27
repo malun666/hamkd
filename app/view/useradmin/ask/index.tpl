@@ -10,7 +10,7 @@
 
 {% block body %}
 <div class="panel panel-default main-area">
-  <form method="post" action="/ask" id="askFrm">
+  <form method="post" action="/userp/ask" id="askFrm">
     <p class="text-danger">三人行，必有我师，寒门苦读，不懈坚持！</p>
     <div class="form-group">
       <input type="text" required class="form-control input-lg" id="title" name="title" placeholder="标题：一句话说清楚核心问题">
